@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MetricConverter</string>
+    <string name="conversion_result">%s %s</string>
+    <string-array name="metrics">
+        <item>Pilih Metrik</item>
+        <item>Panjang</item>
+        <item>Massa</item>
+        <item>Waktu</item>
+        <item>Arus Listrik</item>
+        <item>Suhu</item>
+    </string-array>
+    <string-array name="template">
+        <item>--Pilih Satuan</item>
+    </string-array>
+</resources>

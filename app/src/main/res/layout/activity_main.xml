@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background"
+        android:padding="12dp"
+        android:text="Metric Converter\nJoseph Wowor"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#546E7A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Metrik:"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#424242"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spMetrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_background"
+        android:padding="10dp"
+        android:entries="@array/metrics"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dari:"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#424242"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_background"
+        android:padding="10dp"
+        android:entries="@array/template"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ke:"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#424242"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_background"
+        android:padding="10dp"
+        android:entries="@array/template"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/getInputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:hint="Input nilai"
+        android:inputType="number"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_background"
+        android:padding="10dp"
+        android:text="Hasil Konversi"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#546E7A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
